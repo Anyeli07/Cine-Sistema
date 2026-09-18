@@ -1,0 +1,53 @@
+#precios{
+    margin-left: 50px;
+}
+#cantidadA{
+    margin-left: 80px;
+}
+#cantidadE{
+    margin-left: 180px;
+}
+#cantidadN{
+    margin-left: 200px;
+}
+body{
+    background-color: #000000;
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: #00c7f9;
+    font-size: 100px;
+    font-family: fantasy;
+}
+label{
+    color: #9411E6;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+}
+input{
+    font-size: 35px;
+    width: 200px;
+    background-color: #fdbfea;
+}
+select{
+    font-size: 35px;
+    text-align: center;
+    align-content: center;
+}
+button{
+    font-size: 30px;
+    background-color: #63ccf5;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    align-content: center;
+}
+select{
+    font-size: 35px;
+    background-color: #fdbfea;
+}
+h1{
+    color: #9411E6;
+    font-size: 50px;
+}

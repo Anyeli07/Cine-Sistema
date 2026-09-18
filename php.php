@@ -19,7 +19,7 @@ $entradas   = $cantidadA + $cantidadE + $cantidadN;
 
 //Aplicación del descuento
 if ($entradas > 5) {
-    $descuento = $total * 0.10;
+    $descuento = $subtotal * 0.10;
 } else {
     $descuento = 0;
 }
@@ -32,37 +32,27 @@ $cambio   = $dinero - $total;
 
 echo "<p>Confirma tu compra</p>";
 
-// demostracion del dinero faltante y cambio
-echo "<h1>Estado:</h1>";
-if ($subtotal > $dinero) { 
-    echo "<h3>Dinero insuficiente</h3>";
-    echo "Faltante: Q$faltante<br>";
-} else {
-    echo "<h3>Compra realizada exitosamente</h3>";
-    echo "Cambio: Q$cambio<br>";
-}
 
 
 // Peliculas y salas escogidas
 switch ($peliculas) {
     case 1:
-        echo "<h2>Sala 1</h2> Toy Story<br>";
+        echo "<h2>Sala 1</h2> <h4>Toy Story</h4><br>";
         break;
     case 2:
-        echo "<h2>Sala 2</h2> Toy Story 2<br>";
+        echo "<h2>Sala 2</h2> <h4>Toy Story 2</h4><br>";
         break;
     case 3:
-        echo "<h2>Sala 3</h2> Toy Story 3<br>";
+        echo "<h2>Sala 3</h2> <h4>Toy Story 3</h4><br>";
         break;
     case 4:
-        echo "<h2>Sala 4</h2> Toy Story 4<br>";
+        echo "<h2>Sala 4</h2> <h4>Toy Story 4</h4><br>";
         break;
     case 5:
-        echo "<h2>Sala 5</h2> Toy Story 5<br>";
+        echo "<h2>Sala 5</h2> <h4>Toy Story 5</h4><br>";
         break;
 }
-echo "<br>";
-echo "<br>";
+
 // Resumen de toda la compra en la tabla
 
 echo "<table>";
@@ -84,23 +74,28 @@ echo "<td> Q$total.00 </td>";
 echo "</tr>";
 echo "</table>";
 
+// demostracion del dinero faltante y cambio
+echo "<h1>Estado:</h1>";
+if ($subtotal > $dinero) { 
+    echo "<h3>Dinero insuficiente</h3>";
+    echo "Faltante: Q$faltante<br>";
+} else {
+    echo "<h3>Compra realizada exitosamente</h3>";
+    echo "<h5>Cambio: Q$cambio</h5>";
+}
 
-echo "<br>";
-echo "<br>";
-echo "Tipos de entrada:";
-echo "<br>";
+// especificacion de tipos de entrada
+echo "<h1>Tipos de entrada:</h1>";
 if ($cantidadA > 0) {
-    echo " $cantidadA Adulto";
+    echo "<h5> $cantidadA Adulto</h5>";
 }
 if ($cantidadE > 0) {
-    echo "Estudiante: ";
+    echo "<h5>$cantidadE Estudiante </h5>";
 }
 if ($cantidadN > 0) {
-    echo "Niño: $cantidadN";
+    echo "<h5> $cantidadN Niño</h5>";
 }
 
-echo "<br>";
-echo "<br>";
 
 // Tabla con la cantidad de tickets utilizando ciclos
 echo "<table>";
@@ -116,7 +111,41 @@ echo "</table>";
 ?>
 <style>
 table, th, td {
-  border: 1px solid black;
-  text-align:center;
+  border: 1px solid white;
+  font-size:25px;
+}
+p{
+    text-align: center;
+    color: #00c7f9;
+    font-size: 100px;
+    font-family: fantasy;
+}
+body{
+    background-color: #000000;
+    text-align: center;
+    color:#9411E6;
+}
+h1{
+    color: #9411E6;
+    font-size: 70px;
+}
+h3{
+    color:white;
+    font-size: 30px;
+}
+h2{
+    color: #9411E6;
+    font-size: 50px;
+}
+h4{
+    color: #9411E6;
+    font-size: 70px;
+}
+h5{
+    color: #9411E6;
+    font-size: 30px;
+}
+table{
+    margin-left:640px;
 }
 </style>
