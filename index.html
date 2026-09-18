@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p>Cine</p>
+      <form action="php.php" method="post">
+<h1><label for="canciones">Películas disponibles</label></h1>
+
+<select name="peliculas" id="peliculas" required>
+  <option value="1"><h2>Sala 1</h2> Toy Story</option>
+  <option value="2"><h2>Sala 2</h2> Toy Story 2</option>
+  <option value="3"><h2>Sala 3</h2> Toy Story 3</option>
+  <option value="4"><h2>Sala 4</h2> Toy Story 4</option>
+  <option value="5"><h2>Sala 5</h2> Toy Story 5</option>
+  <link rel="stylesheet" href="css.css">
+</select>
+<br>
+
+<br>
+<div>
+<h1><label for="cantidad">Tickets</label></h1>
+<label id="precios">Adultos - Q40.00</label>
+<label id="precios">Estudiantes - Q30.00</label>
+<label id="precios">Niños - Q20.00</label>
+<br>
+<input type="number" name="cantidadA" id="cantidad" min="1">
+
+<input type="number" name="cantidadE" id="cantidad" min="1">
+
+<input type="number" name="cantidadN" id="cantidad" min="1">
+</div>
+<br>
+<div>
+<br>
+<h1><label for="dinero">Dinero</label></h1>
+<input type="number" name="dinero" id="dinero" min="0" placeholder="Q.0.00" required>
+</div>
+<br>
+<br>
+<br>
+
+<button value="enviar" id="enviar">Continuar con la compra</button>
+    </form>
+</body>
+</html>
